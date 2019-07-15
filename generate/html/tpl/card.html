@@ -1,0 +1,16 @@
+{{ define "card_github" }}
+
+<!DOCTYPE html>
+<html lang="en">
+	{{ template "card"}}
+	<div class="card" style="width:18rem;">
+		<div class="card-body">
+			<h5 class="card-title">{{.HeaderText}}</h5>
+			<h6 class="card-subtitle mb-2 text-muted">{{.SubheaderText}}</h6>
+			<p class="card-text">{{.ParagraphText}}</p>
+			<a href="{{.LinkOneURL}}" class="card-link">{{.LinkOneText}}</a>
+			<a href="{{.LinkTwoURL}}" class="card-link">{{.LinkTwoText}}</a>
+		</div>
+	</div>
+	{{end}}
+</html>
